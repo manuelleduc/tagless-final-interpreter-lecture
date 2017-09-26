@@ -10,3 +10,6 @@ instance ExpSYM Int where
 
 instance MulSYM Int where
   mul e1 e2 = e1 * e2
+
+eval :: Int -> Int
+eval = id

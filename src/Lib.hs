@@ -18,7 +18,3 @@ view :: Exp -> String
 view (Lit n)     = show n
 view (Neg e)     = "(" ++ "-" ++ view e ++ ")"
 view (Add e1 e2) = "(" ++ view e1 ++ " + " ++ view e2 ++ ")"
-
-data Tree = Leaf String
-          | Node String [Tree]
-          deriving (Eq, Read, Show)
