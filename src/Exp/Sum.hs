@@ -1,4 +1,4 @@
-module Exp.Sum where
+module Exp.Sum (ExpSYM(..), tf1) where
 
 class ExpSYM repr where
   lit :: Int -> repr

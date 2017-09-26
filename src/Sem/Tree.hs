@@ -1,8 +1,20 @@
-module Sem.Tree where
+module Sem.Tree (
+  tf1_tree,
+  tf1'_eval,
+  tf1'_int3,
+  tf1E_int3,
+  tfxE_int3,
+  Tree(..),
+  fromTreeExt,
+  fix,
+  ErrMsg,
+  check_consume,
+  thrice,
+  toTree) where
 
 import           Control.Applicative ((<$>))
 import           Control.Monad       (liftM, liftM2)
-import           Exp.Mul             (MulSYM(..))
+import           Exp.Mul             (MulSYM (..))
 import           Exp.Sum
 import           Sem.Eval
 import           Sem.PrettyPrinter

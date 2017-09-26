@@ -3,6 +3,7 @@ module Main where
 import           Exp.Mul           (tfm1, tfm2)
 import           Exp.Sum           (tf1)
 import           Sem.Eval
+import qualified Sem.MulTree       as MT
 import           Sem.PrettyPrinter
 import           Sem.Tree
 
@@ -21,3 +22,8 @@ main = do print (tf1 :: Int)
           tf1E_int3
           putStrLn "# tfxE_int3"
           tfxE_int3
+          putStrLn ">>>> with MulTree"
+          putStrLn "# tf1'_int3"
+          MT.tf1'_int3
+          putStrLn "# tfm1’_int3 "
+          MT.tfm1'_int3

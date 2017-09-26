@@ -1,4 +1,4 @@
-module Exp.Mul where
+module Exp.Mul (MulSYM(..), tfm1, tfm2) where
 
 import           Exp.Sum
 

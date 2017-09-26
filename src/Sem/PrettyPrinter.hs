@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleInstances #-}
 
-module Sem.PrettyPrinter where
+module Sem.PrettyPrinter (view) where
 
 import           Exp.Mul
 import           Exp.Sum

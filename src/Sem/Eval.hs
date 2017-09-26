@@ -1,4 +1,4 @@
-module Sem.Eval where
+module Sem.Eval (eval) where
 
 import           Exp.Mul
 import           Exp.Sum
