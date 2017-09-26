@@ -2,7 +2,7 @@
 
 module PrettyPrinter where
 
-import Lib
+import           Exp.Sum
 
 instance ExpSYM String where
   lit = show

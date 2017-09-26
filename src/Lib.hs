@@ -15,13 +15,6 @@ eval (Add e1 e2) = eval e1 + eval e2
 type Repr = Int
 
 view :: Exp -> String
-view (Lit n) = show n
-view (Neg e) = "(" ++ "-" ++ view e ++ ")"
+view (Lit n)     = show n
+view (Neg e)     = "(" ++ "-" ++ view e ++ ")"
 view (Add e1 e2) = "(" ++ view e1 ++ " + " ++ view e2 ++ ")"
-
-
-
-class ExpSYM repr where
-  lit :: Int -> repr
-  neg :: repr -> repr
-  add :: repr -> repr -> repr

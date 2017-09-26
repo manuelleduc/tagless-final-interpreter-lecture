@@ -1,6 +1,6 @@
 module Eval where
 
-import Lib
+import           Exp.Sum
 
 instance ExpSYM Int where
   lit a = a
