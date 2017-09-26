@@ -1,12 +1,14 @@
 module Main where
 
-import           Eval
-import           Exp.Sum
-import           PrettyPrinter
-
-tf1 :: (ExpSYM a) => a
-tf1 = add (lit 8) (neg (add (lit 1) (lit 2)))
+import           Exp.Mul           (tfm1, tfm2)
+import           Exp.Sum           (tf1)
+import           Sem.Eval
+import           Sem.PrettyPrinter
 
 main :: IO ()
 main = do print (tf1 :: Int)
           putStrLn (tf1 :: String)
+          print (tfm1 :: Int)
+          putStrLn (tfm1 :: String)
+          print (tfm2 :: Int)
+          putStrLn (tfm2 :: String)
