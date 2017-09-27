@@ -1,4 +1,4 @@
-module PushNegl (ti1_norm_view, ti1_norm_eval) where
+module PushNegl (ti1_norm_view, ti1_norm_eval, push_neg) where
 
 import           Lib (Exp (Add, Lit, Neg), ti1, view, eval)
 

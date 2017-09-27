@@ -2,6 +2,7 @@ module Main where
 
 import           Exp.Mul           (tfm1, tfm2)
 import           Exp.Sum           (tf1)
+import           Flatl             (ti3_norm_view, ti3_view)
 import qualified PushNegF          as PnF
 import           PushNegl          (ti1_norm_eval, ti1_norm_view)
 import           Sem.Eval
@@ -34,3 +35,6 @@ main = do print (tf1 :: Int)
           print ti1_norm_eval
           putStrLn "# PushNegF"
           print $ view (PnF.push_neg tf1)
+          putStrLn "Flatl"
+          putStrLn ti3_view
+          putStrLn ti3_norm_view
