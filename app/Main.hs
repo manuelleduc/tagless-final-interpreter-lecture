@@ -9,6 +9,7 @@ import           Sem.Eval
 import qualified Sem.MulTree       as MT
 import           Sem.PrettyPrinter
 import           Sem.Tree
+import qualified TTFdB as T
 
 main :: IO ()
 main = do print (tf1 :: Int)
@@ -38,3 +39,11 @@ main = do print (tf1 :: Int)
           putStrLn "Flatl"
           putStrLn ti3_view
           putStrLn ti3_norm_view
+          putStrLn "# TTFdB"
+          putStrLn (T.view T.td1)
+          print (T.eval T.td1)
+          putStrLn (T.view T.td2o)
+          putStrLn (T.view T.td2o')
+          --print (T.eval T.td2o')
+          putStrLn (T.view T.td3)
+          --print (T.eval T.td3)
