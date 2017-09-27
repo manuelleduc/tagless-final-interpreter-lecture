@@ -2,6 +2,8 @@ module Main where
 
 import           Exp.Mul           (tfm1, tfm2)
 import           Exp.Sum           (tf1)
+import qualified PushNegF          as PnF
+import           PushNegl          (ti1_norm_eval, ti1_norm_view)
 import           Sem.Eval
 import qualified Sem.MulTree       as MT
 import           Sem.PrettyPrinter
@@ -27,3 +29,8 @@ main = do print (tf1 :: Int)
           MT.tf1'_int3
           putStrLn "# tfm1’_int3 "
           MT.tfm1'_int3
+          putStrLn "# PushNegl"
+          print ti1_norm_view
+          print ti1_norm_eval
+          putStrLn "# PushNegF"
+          print $ view (PnF.push_neg tf1)

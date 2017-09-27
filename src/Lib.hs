@@ -1,4 +1,4 @@
-module Lib () where
+module Lib (Exp(Lit, Neg, Add), ti1, view, eval) where
 
 data Exp = Lit Int
          | Neg Exp
