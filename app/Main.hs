@@ -40,10 +40,10 @@ main = do print (tf1 :: Int)
           putStrLn ti3_view
           putStrLn ti3_norm_view
           putStrLn "# TTFdB"
-          putStrLn (T.view T.td1)
-          print (T.eval T.td1)
-          putStrLn (T.view T.td2o)
-          putStrLn (T.view T.td2o')
-          --print (T.eval T.td2o')
-          putStrLn (T.view T.td3)
-          --print (T.eval T.td3)
+          print T.th1_eval
+          print T.th2_eval'
+          print T.th1_view
+          print T.th2_view
+          print T.th3_view
+          print T.tpow72_eval
+          print T.tpow_view
