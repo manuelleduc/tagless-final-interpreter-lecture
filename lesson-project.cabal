@@ -26,7 +26,7 @@ library
                      , Lib
                      , Flatl
                      , TTFdB
-  build-depends:       base >= 4.7 && < 5
+  build-depends:       base >= 4.7 && < 5, mtl
   default-language:    Haskell2010
 
 executable lesson-project-exe

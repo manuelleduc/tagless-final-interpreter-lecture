@@ -6,7 +6,7 @@
 -- based on the code accompanying the paper by
 --   Jacques Carette, Oleg Kiselyov, and Chung-chieh Shan
 
-module TTFdB (th1_eval, th2_eval', th1_view, th2_view, th3_view, tpow72_eval, tpow_view) where
+module TTFdB (th1_eval, th2_eval', th1_view, th2_view, th3_view, tpow72_eval, tpow_view, R(..)) where
 
 -- The language is simply-typed lambda-calculus with fixpoint and
 -- constants. It is essentially PCF.
