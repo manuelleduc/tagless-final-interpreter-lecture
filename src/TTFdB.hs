@@ -1,10 +1,12 @@
--- * Essentially, Haskell98!
 {-# LANGUAGE NoMonomorphismRestriction #-}
 
--- * Typed tagless-final interpreters for PCF
--- * Higher-order abstract syntax
--- based on the code accompanying the paper by
---   Jacques Carette, Oleg Kiselyov, and Chung-chieh Shan
+{-|
+Module: TTFdB
+Description: TTDdB module
+Maintainer: manuel.leduc@gmail.com
+
+More text about TTFdB module.
+-}
 
 module TTFdB (th1_eval, th2_eval', th1_view, th2_view, th3_view, tpow72_eval, tpow_view, R(..)) where
 
